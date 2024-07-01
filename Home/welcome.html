@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     
+</head>
+<body>
+    <button class="logout-btn" id="logout-btn">Logout</button>
+    <div class="container text-center mt-5">
+        <h1>Welcome, <span id="userName"></span>!</h1>
+    </div>
+
+    <script>
+        // Retrieve the user's name from the URL parameter and display it
+        const urlParams = new URLSearchParams(window.location.search);
+        const userName = urlParams.get('name');
+        document.getElementById('userName').textContent = userName;
+
+        // Add event listener to the logout button
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            // Clear the URL parameter and redirect to the login page
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

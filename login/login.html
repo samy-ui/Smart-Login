@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="./images/bookmark.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="vsc-initialized">
+    <form id="loginForm" class="container mx-auto my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1 class="text-info mb-4">Smart Login System</h1>
+
+            <input class="form-control mb-4" type="email" id="loginEmail" placeholder="Enter your Email" aria-label="Email">
+            <input class="form-control mb-4" type="password" id="loginPassword" placeholder="Enter your Password" aria-label="Password">
+
+            <div class="alert alert-danger d-none" id="loginEmailAlert">Please enter a valid email address.</div>
+            <div class="alert alert-danger d-none" id="loginPasswordAlert">Password must be at least 8 characters long, contain at least one uppercase letter, and one special character.</div>
+            <div class="alert alert-danger d-none" id="loginExistAlert">Email or password is incorrect.</div>
+            <div class="alert alert-success d-none" id="loginSuccessAlert">Success! You are now logged in.</div>
+
+            <button type="submit" class="btn btn-outline-info w-100">Log In</button>
+            <p class="text-dark mt-3">  Don't have an account? <a href="../sign Up/index.html" class="text-dark text-decoration-none">Sign up</a></p>
+        </div>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
